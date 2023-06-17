@@ -1,0 +1,107 @@
+.listItem-container{
+    padding: 20px 10px;
+
+}
+
+.listItem-loading{
+    max-width: 30px;
+    margin: 10px
+}
+
+.listItem-faded{
+    opacity: 0.5;
+}
+
+.listItem-image{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.listItem-text{
+    font-size: 15px;
+    margin: auto 10px;
+}
+
+.listItem-arrow{
+    max-width: 15px;
+    max-height: 15px;
+    margin: auto 0 auto auto;
+}
+
+.listItem-bin{
+    max-width: 15px;
+    max-height: 15px;
+    margin: auto 0 auto 20px;
+}
+
+.listItem-basket{
+    max-width: 15px;
+    max-height: 15px;
+    margin: auto 0 auto 20px;
+}
+
+.listItem-arrow-reverse{
+    transform: rotate(180deg);
+}
+
+.listItem-entry{
+    border: 0;
+    background-color: transparent;
+    margin: 0 !important;
+}
+
+.listItem-lookingFor{
+    color: grey;
+    white-space: nowrap;
+    margin: 10px !important;
+}
+
+.listItem-lookingFor:hover{
+    cursor: pointer;
+}
+
+.listItemDropdown-container{
+    background-color: white;
+
+    margin-left: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.listItemDropdown-text{
+    width: 80px;
+    margin: 5px 10px;
+    line-height: 15px;
+}
+
+.addListItem-container{
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.addListItem-entry{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+    padding: 2px
+}
+
+.addListItem-button{
+    background-color: transparent;
+    border: 0;
+    font-size: 30px;
+    color: #5c5c5c;
+    margin: 0 5px;
+}
+
+.addListItem-select{
+    margin: 0 0 0 auto;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0 5px;
+}
+
+.addListItem-add{
+    font-size: 15px;
+}

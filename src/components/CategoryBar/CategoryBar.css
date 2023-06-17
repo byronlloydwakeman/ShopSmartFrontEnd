@@ -1,0 +1,15 @@
+.categoryBar-text{
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+.categoryBar-container{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.toggleBar-container{
+    margin: auto 0 auto auto;
+}
