@@ -1,11 +1,18 @@
 .listItem-container{
-    padding: 20px 10px;
+    display: flex;
 
+
+    padding: 10px;
+    border-radius: 5px;
+
+    background-color: white;
+
+    max-width: 250px;
 }
 
 .listItem-loading{
     max-width: 30px;
-    margin: 10px
+    margin: 10px;
 }
 
 .listItem-faded{
@@ -13,20 +20,17 @@
 }
 
 .listItem-image{
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 150px;
+    max-height: 150px;
+
+    margin: 10px auto;
 }
 
 .listItem-text{
     font-size: 15px;
-    margin: auto 10px;
+    margin: 5px 10px;
 }
 
-.listItem-arrow{
-    max-width: 15px;
-    max-height: 15px;
-    margin: auto 0 auto auto;
-}
 
 .listItem-bin{
     max-width: 15px;
@@ -93,6 +97,21 @@
     font-size: 30px;
     color: #5c5c5c;
     margin: 0 5px;
+}
+
+.addToList-button{
+    background-color: transparent;
+
+    padding: 5px;
+    margin: 5px;
+
+    min-width: fill;
+
+    border: 0;
+}
+
+.addToList-button:hover{
+    background-color: var(--basket-color);
 }
 
 .addListItem-select{

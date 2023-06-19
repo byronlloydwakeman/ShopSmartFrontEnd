@@ -1,22 +1,16 @@
 import React, { useState } from "react";
-
-// Importing toastify module
 import {toast} from 'react-toastify';
  
-// Import toastify css file
 import 'react-toastify/dist/ReactToastify.css';
-
 import "../../App.css";
 
-// toast.configure();
-
-export const AddListItem = ({shoppingList, setShoppingList, setFilter, waitrose, asda, tesco}) => {
+export const AddListItem = ({setFilter, setUserInput, waitrose, asda, tesco}) => {
     const [inputValue, setInputValue] = useState("");
 
     const handleAddItem = () => {
         const selectElement = document.querySelector('.addListItem-select');
         setFilter(selectElement.value);
-        setShoppingList([...shoppingList, inputValue]);
+        setUserInput(inputValue);
         setInputValue(''); // Clear the input after adding the item
     };
 
@@ -42,7 +36,6 @@ export const AddListItem = ({shoppingList, setShoppingList, setFilter, waitrose,
                 <option>Most quantity</option>
                 <option>Least quantity</option>
             </select>
-
         </div>
     )
 }
