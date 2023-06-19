@@ -1,0 +1,48 @@
+.shoppingBasketItem-image{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.shoppingBasketItem-text{
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.shoppingBasketItem-icon{
+    max-width: 40px;
+    max-height: 40px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    padding: 3px;
+
+    background-color: var(--basket-color);
+}
+
+.shoppingBasketIcon-container{
+    display: flex;
+    background: none;
+
+    padding: 0;
+    margin-left: auto;
+    margin-top: 5px;
+
+    transition: all 1s linear;
+}
+
+.shoppingBasket-container{
+    background-color: var(--basket-color);
+
+    padding: 10px;
+}
+
+.shoppingBasket-title{
+    font-size: 20px;
+
+    margin: 15px;
+}
+
+.basketTransition{
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
