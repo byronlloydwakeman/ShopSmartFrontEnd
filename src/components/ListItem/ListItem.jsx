@@ -3,8 +3,22 @@ import React, { useEffect, useState } from "react";
 import "./ListItem.css"
 import "../../App.css";
 
+// const handleElementUpdate = (index, newValue) => {
+//     setShoppingBasket(prev => 
+//         prev.map(item, i) => {
+//             if (i == index){
+//                 return {
+//                     ...item, quantity: quantity + 1
+//                 }
+//             }
+//             return 0;
+//         });
+// }
 
 export const ListItem = ({data, shoppingBasket, setShoppingBasket}) => {
+
+
+
     return(
         <div className="flex-column listItem-container">
             <img className="listItem-image" src={data.image}></img>
@@ -17,7 +31,10 @@ export const ListItem = ({data, shoppingBasket, setShoppingBasket}) => {
             </div>
             <div className="flex-row">
                 <button className="addToList-button" onClick={() => {
-                    setShoppingBasket([...shoppingBasket, data])
+                    const index = shoppingBasket.findIndex(item => item.name === data.name);
+                    if(index === -1){
+                        setShoppingBasket([...shoppingBasket, data])
+                    }
                 }}>Add to shopping list</button>
             </div>
         </div>
