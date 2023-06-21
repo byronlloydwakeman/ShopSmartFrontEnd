@@ -13,8 +13,6 @@ export const ShoppingList = () => {
 
     const [userInput, setUserInput] = useState("");
 
-    const [data, setData] = useState(null);
-
     // Toggles
     const [waitrose, setWaitrose] = useState(false);
     const [asda, setAsda] = useState(false);
@@ -39,7 +37,7 @@ export const ShoppingList = () => {
                     }
                 </div>
 
-                <ShoppingBasket shoppingBasket={shoppingBasket}/>
+                <ShoppingBasket shoppingBasket={shoppingBasket} setShoppingBasket={setShoppingBasket}/>
             </div>
         </>
     )
