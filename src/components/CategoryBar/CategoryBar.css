@@ -6,6 +6,8 @@
 
 .categoryBar-container{
     padding: 10px 20px;
+    max-width: 400px;
+    min-width: 400px;
 }
 
 .categoryBar-arrow{
